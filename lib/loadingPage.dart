@@ -9,7 +9,7 @@ class LoadingPage extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/Loading.png"), // Arka plan resmi yolu
+                image: AssetImage("assets/images/Loading.png"), // Arka plan resmi yolu
                 fit: BoxFit.cover,
               ),
             ),
