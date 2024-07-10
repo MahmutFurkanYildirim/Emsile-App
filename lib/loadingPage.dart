@@ -9,7 +9,8 @@ class LoadingPage extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/images/Loading.png"), // Arka plan resmi yolu
+                image: AssetImage("assets/images/Loading.png"),
+                // Arka plan resmi yolu
                 fit: BoxFit.cover,
               ),
             ),
@@ -19,7 +20,8 @@ class LoadingPage extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.cyanAccent), // İsteğe bağlı: Yükleme simgesinin rengi
+                valueColor: AlwaysStoppedAnimation<Color>(Colors
+                    .cyanAccent), // İsteğe bağlı: Yükleme simgesinin rengi
               ),
             ),
           ),

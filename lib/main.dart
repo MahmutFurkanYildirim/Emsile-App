@@ -46,5 +46,3 @@ class _HomePageState extends State<HomePage> {
     return _isLoading ? LoadingPage() : MainPage();
   }
 }
-
-

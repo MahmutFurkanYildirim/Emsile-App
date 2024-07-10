@@ -12,14 +12,16 @@ class MainPage extends StatelessWidget {
       ),
       drawer: Drawer(
         child: ListView(
-          padding: const EdgeInsets.fromLTRB(25,50,25,0),
+          padding: const EdgeInsets.fromLTRB(25, 50, 25, 0),
           children: <Widget>[
             ListTile(
               leading: const Icon(Icons.home_outlined),
-              title: const Text('Ana sayfa'),
+              title: const Text(
+                'Ana sayfa',
+              ),
               onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: (context)
-                => MainPage() ));
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => MainPage()));
               },
             ),
             ListTile(
@@ -27,8 +29,8 @@ class MainPage extends StatelessWidget {
               title: const Text('Ayarlar'),
               onTap: () {
                 Navigator.pop(context);
-                Navigator.of(context).push(MaterialPageRoute(builder: (context)
-                  =>  settingsPage(),
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => settingsPage(),
                 ));
               },
             ),
@@ -53,8 +55,8 @@ class MainPage extends StatelessWidget {
               title: const Text('Uygulama hakkında'),
               onTap: () {
                 Navigator.pop(context);
-                Navigator.of(context).push(MaterialPageRoute(builder: (context)
-                =>  AboutUs(),
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => AboutUs(),
                 ));
               },
             ),
@@ -73,8 +75,10 @@ class MainPage extends StatelessWidget {
       ),
     );
   }
+
   void _shareApp(BuildContext context) {
-    final String text = 'Bu harika uygulamayı indir! [https://uzem.ifam.com.tr/]';
+    final String text =
+        'Bu harika uygulamayı indir! [https://uzem.ifam.com.tr/]';
     Share.share(text);
   }
 }
