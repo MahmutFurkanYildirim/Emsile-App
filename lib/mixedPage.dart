@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class settingsPage extends StatelessWidget {
+class MixedPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Ayarlar',
+        title: Text(
+          'İsim ve Fiiler',
           style: TextStyle(
             fontFamily: "Bona",
             fontSize: 27,
@@ -15,6 +15,17 @@ class settingsPage extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.teal,
+      ),
+      body: Center(
+        child: Text(
+          'İsim ve Fiiler',
+          style: TextStyle(
+            fontFamily: "Inter",
+            fontSize: 18,
+            fontWeight: FontWeight.normal,
+            color: Colors.black,
+          ),
+        ),
       ),
     );
   }

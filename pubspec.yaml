@@ -63,6 +63,7 @@ flutter:
   assets:
     - assets/images/Loading.png
     - assets/images/AppIcon.png
+    - assets/files/data.json
 
   # To add assets to your application, add an assets section, like this:
   # assets:

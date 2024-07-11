@@ -42,48 +42,58 @@ class AboutUs extends StatelessWidget {
               thickness: 2,
               height: 20,
             ),
-            const Padding(padding: EdgeInsets.fromLTRB(10, 10, 10, 10)),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: Image.asset('assets/images/AppIcon.png'),
-                ),
-                const Padding(padding: EdgeInsets.fromLTRB(10, 10, 10, 10)),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      'Emsile Öğreniyorum',
-                      style: TextStyle(
-                        fontFamily: "Inter",
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
+            const SizedBox(height: 20.0), // Ekstra boşluk ekledim
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        width: 60,
+                        height: 60,
+                        child: Image.asset('assets/images/AppIcon.png'),
                       ),
-                    ),
-                    const SizedBox(height: 4.0),
-                    Text(
-                      'Version 1.0 (${DateTime.now().year})',
-                      style: const TextStyle(
-                        fontFamily: "Inter",
-                        fontSize: 16,
-                        fontWeight: FontWeight.normal,
+                      const SizedBox(width: 10), // Boşluk ekledim
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'Emsile Öğreniyorum',
+                            style: TextStyle(
+                              fontFamily: "Inter",
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 4.0),
+                          Text(
+                            'Version 1.0 (${DateTime.now().year})',
+                            style: const TextStyle(
+                              fontFamily: "Inter",
+                              fontSize: 16,
+                              fontWeight: FontWeight.normal,
+                            ),
+                          ),
+                          const SizedBox(height: 4.0),
+                          const Text(
+                            'Geliştirici: Mahmut Furkan Yıldırım',
+                            style: TextStyle(
+                              fontFamily: "Inter",
+                              fontSize: 16,
+                              fontWeight: FontWeight.normal,
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
-                    const SizedBox(height: 4.0),
-                    const Text(
-                      'Geliştirici: Mahmut Furkan Yıldırım',
-                      style: TextStyle(
-                        fontFamily: "Inter",
-                        fontSize: 16,
-                        fontWeight: FontWeight.normal,
-                      ),
-                    ),
-                  ],
-                ),
-              ],
+                    ],
+                  ),
+                  const SizedBox(height: 20.0), // Alt kısma boşluk ekledim
+                ],
+              ),
             ),
           ],
         ),
